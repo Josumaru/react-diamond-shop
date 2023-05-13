@@ -1,6 +1,7 @@
-function Footer(props) {
+import "./Footer.css"
+const Footer = (props) => {
     return (
-        <div className="Footer">
+        <div className="footer">
             <h4 className="footer-title">{ props.footerTitle }</h4>
             <ul>
                 <li className="list">
@@ -15,6 +16,11 @@ function Footer(props) {
                 <li className="list" >
                     <a href="google.com">{ props.footerContent4 }</a>
                 </li>
+                <p className="footer-newsletter"> {props.newsLetter}</p>
+                <div className="subscribe-newsletter">
+                    { props.subscribeEmail }
+                    { props.subscribeButton }
+                </div>
             </ul>
             <p className="footer-copyright">{ props.copyright }</p>
         </div>

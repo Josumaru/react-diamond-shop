@@ -1,47 +1,68 @@
 :root {
-  --main-color: rgb(0, 169, 242);
+  --main-color: #9fef00;
   --text-color: rgb(255, 255, 255);
-  --black-color: black;
+  --backround-color: #141d2b;
 }
 .container {
+  border-radius: 20px;
+  position: relative;
+  bottom: 0;
+  padding-top:10px;
+  width: 95%;
   display: flex;
   flex-direction: column;
-  background-color: var(--black-color);
+  background-color: var(--backround-color);
 }
 .footer-container {
-  display: flex;
-  flex-direction: row;
+  grid-template-columns: repeat(4,1fr);
+  display: grid;
   align-items:center;
   justify-content: center;
-}
-.Footer{
-  justify-content: center;
-  align-items: center;
-  width: 33%;
+  transition:all 0.5s ease ;
 }
 .footer-copyright{
-  position:relative;
-  bottom: 0;
-  margin: auto;
-  padding:10px;
-  color: var(--text-color);
-}
-.footer-title {
-  margin: 0;
-  color: var(--main-color);
-  text-indent: 40px;
-}
-.Footer a{
   font-size: 12px;
-  text-decoration: none;
+}
+.footer-content{
+  display: flex;
+  justify-content: center;
+}
+.subscribe-email {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
   color: var(--text-color);
-  transition: all 0.3s ease;
+
 }
-.Footer a:hover{
-  color: var(--main-color);
-  padding: 12px;
+.subscribe-button{
+  cursor: pointer;
+  border: none;
+  color: var(--backround-color);
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif; 
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(177,255,182,1) 0% ,rgba(0,255,88,1)100%);
+
 }
-.list{
-  list-style: none;
-  text-decoration: none;
+@media screen and (max-width:900px){
+  .footer-container{
+  grid-template-columns: repeat(3,1fr);
+
+  }
+}
+@media screen and (max-width:600px){
+  .footer-container{
+  grid-template-columns: repeat(2,1fr);
+
+  }
+}
+@media screen and (max-width:500px){
+  .footer-container{
+  grid-template-columns: repeat(1,1fr);
+
+  }
 }

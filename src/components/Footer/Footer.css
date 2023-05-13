@@ -1,0 +1,38 @@
+.footer{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: auto;
+}
+.footer-copyright{
+    position:relative;
+    bottom: 0;
+    margin: auto;
+    padding:10px;
+    color: var(--text-color);
+} 
+.footer-title {
+    /* margin: 0; */
+    color: var(--main-color);
+    text-indent: 40px;
+}
+.footer a{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+.footer a:hover{
+    color: var(--main-color);
+    padding: 12px;
+}
+.list{
+    list-style: none;
+    text-decoration: none;
+} 
+
+.subscribe-newsletter{
+    display: flex;
+    flex-direction:column;
+}
+  
