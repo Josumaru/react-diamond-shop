@@ -12,7 +12,6 @@
     color: var(--text-color);
 } 
 .footer-title {
-    /* margin: 0; */
     color: var(--main-color);
     text-indent: 40px;
 }

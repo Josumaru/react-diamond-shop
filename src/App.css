@@ -1,4 +1,5 @@
 :root {
+  --body-color: #2f353f;
   --main-color: #9fef00;
   --text-color: rgb(255, 255, 255);
   --backround-color: #141d2b;
@@ -8,7 +9,7 @@
   position: relative;
   bottom: 0;
   padding-top:10px;
-  width: 95%;
+  width: 99%;
   display: flex;
   flex-direction: column;
   background-color: var(--backround-color);
@@ -35,7 +36,13 @@
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
+  transition: all 1s ease;
 
+}
+.subscribe-email:focus {
+  border: 1px rgb(214, 255, 201) solid;
+  color: #9fef00;
+  outline: none;
 }
 .subscribe-button{
   cursor: pointer;

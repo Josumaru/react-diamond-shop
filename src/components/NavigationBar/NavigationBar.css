@@ -1,0 +1,48 @@
+.navigation-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    color: var(--main-color);
+    padding-left: 10px;
+}
+.navigation-bar-link ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+.navigation-bar-link ul li{
+    padding-right: 10px;
+}
+.link {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: all 0.5s ease;
+}
+.link:hover {
+    color: var(--text-color);
+}
+.search-bar{
+    background-color: var(--main-color);
+    margin-right: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding:10px ;
+    transition: all 0.5s ease;
+}
+.search-bar::placeholder {
+    color: var(--body-color);
+}
+.search-bar:focus {
+    outline: none;
+    background-color: var(--text-color);
+}
+
+.search-bar::-webkit-search-cancel-button{
+    display: none;
+}
